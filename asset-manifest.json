@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/trybrass-page/static/css/main.112f4476.chunk.css",
+    "main.js": "/trybrass-page/static/js/main.ef133c8b.chunk.js",
+    "main.js.map": "/trybrass-page/static/js/main.ef133c8b.chunk.js.map",
+    "runtime-main.js": "/trybrass-page/static/js/runtime-main.a7275151.js",
+    "runtime-main.js.map": "/trybrass-page/static/js/runtime-main.a7275151.js.map",
+    "static/js/2.58725d70.chunk.js": "/trybrass-page/static/js/2.58725d70.chunk.js",
+    "static/js/2.58725d70.chunk.js.map": "/trybrass-page/static/js/2.58725d70.chunk.js.map",
+    "static/js/3.c35415dd.chunk.js": "/trybrass-page/static/js/3.c35415dd.chunk.js",
+    "static/js/3.c35415dd.chunk.js.map": "/trybrass-page/static/js/3.c35415dd.chunk.js.map",
+    "index.html": "/trybrass-page/index.html",
+    "static/css/main.112f4476.chunk.css.map": "/trybrass-page/static/css/main.112f4476.chunk.css.map",
+    "static/js/2.58725d70.chunk.js.LICENSE.txt": "/trybrass-page/static/js/2.58725d70.chunk.js.LICENSE.txt",
+    "static/media/svgexport-5.af352687.png": "/trybrass-page/static/media/svgexport-5.af352687.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7275151.js",
+    "static/js/2.58725d70.chunk.js",
+    "static/css/main.112f4476.chunk.css",
+    "static/js/main.ef133c8b.chunk.js"
+  ]
+}
