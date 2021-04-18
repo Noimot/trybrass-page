@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.span-advert {
+    background: #e6f8f3;
+    color: #10b683;
+    font-size: 0.82rem;
+    letter-spacing: 0.07rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.advert-paragraph {
+    font-size: 0.9rem;
+    color: rgb(109, 107, 107);
+
+}
+
+.advert-div {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.4rem 0.2rem;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(202, 201, 201, 0.2), 0 6px 20px 0 rgba(179, 175, 175, 0.19);
+}
+
+
+@media (max-width:480px) {
+    .advert-div {
+        background: #e6f8f3;
+        border-radius: 0;
+        max-width: 800px;
+        width: 100%;
+    }
+    .span-advert {
+        display: block;
+    }
+    .advert-paragraph {
+        color: #000;
+    }
+}

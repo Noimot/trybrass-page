@@ -1,0 +1,21 @@
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.4rem;
+    align-items: center;
+    margin: 0 9rem;
+}
+
+
+@media (max-width:1200px) {
+    .navbar-flex {
+        margin: 0 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-flex {
+        margin: 0 1rem;
+    }
+}
+
