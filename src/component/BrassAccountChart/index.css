@@ -25,7 +25,7 @@ div.account-info >* {
 }
 
 .account-info > p {
-    color: rgb(136, 133, 133);
+    color: rgb(46, 45, 45);
 }
 
 .span-color {
@@ -60,22 +60,66 @@ div.button-and-tel-container >* {
     .account-info {
         margin-left: 4rem;
     }
-    
+}
+
+@media (max-width:1060px) {
+    .trybrass-chart > img {
+        width: 35rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:1020px) {
+    .trybrass-chart > img {
+        width: 32rem;
+        margin-right: 1rem;
+    }
 }
 
 @media (max-width:992px) {
     .trybrass-chart > img {
-        width: 37rem;
+        width: 32rem;
+        margin-right: 1rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:910px) {
     .trybrass-chart > img {
-        width: 23rem;
+        width: 28rem;
+        margin-right: 1rem;
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:850px) {
+    .trybrass-chart > img {
+        width: 24rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .trybrass-chart > img {
+        width: 20rem;
+        margin-right: 1rem;
+    }
+}
+
+
+@media (max-width:765px) {
+    .brass-chart-info {
+        flex-direction: column;
+    }
+    .trybrass-chart > img {
+        width: 38rem;
+    }
+    .account-info {
+        margin-left: 2rem;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width:600px) {
     .brass-chart-info {
         flex-direction: column;
     }
@@ -88,7 +132,6 @@ div.button-and-tel-container >* {
     }
     
 }
-
 
 @media (max-width:480px) {
     .brass-chart-info {
