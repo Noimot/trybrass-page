@@ -1,0 +1,13 @@
+.dashboard-sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: rgb(227, 230, 227);
+    text-align: center;
+}
+
+.dashboard-sidebar > * {
+    border-bottom: 1px solid rgb(194, 193, 193);
+   color: rgb(59, 58, 58);
+   padding: 25px;
+  
+}

@@ -1,0 +1,95 @@
+.content-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: 12rem;
+}
+
+.content-display {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+    height: 70vh;
+}
+.content-display >* {
+    padding: 2.5rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.account-income {
+    background-color: purple;
+}
+
+.account-income >* {
+     padding-top: 0.5rem;
+}
+
+.account-expenses {
+    background-color: red;
+}
+
+.account-expenses >* {
+    padding-top: 0.5rem;
+}
+
+.account-cash {
+    background-color: royalblue;
+}
+
+.account-cash >* {
+    padding-top: 0.5rem;
+}
+.account-margin {
+    background-color: salmon;
+}
+
+.account-margin >* {
+    padding-top: 0.5rem;
+}
+
+
+
+@media (max-width:1200px){
+    .content-wrapper {
+        margin-left: 6rem;
+    }
+}
+
+
+
+@media (max-width:812px){
+    .account-margin {
+    font-size: 0.9rem;
+}
+
+}
+
+@media (max-width:781px){
+    .account-margin {
+    font-size: 0.7rem;
+}
+
+.account-income {
+    font-size: 0.7rem;
+}
+
+.account-cash {
+    font-size: 0.7rem;
+}
+
+.account-expenses {
+    font-size: 0.7rem;
+}
+
+}
+
+@media (max-width:725px){
+    .content-display{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    
+}

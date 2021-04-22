@@ -35,11 +35,11 @@ export const Button = () => {
     )
 }
 
-export const HomeNavBar = () => {
+export const HomeNavBar = ({sideNav}) => {
     return (
         <div className='navbar-flex'>
            <div><Link to='/'><NavbarLogo /></Link></div> 
-            <div><Link to='/login'><Button /></Link></div>
+            <div><Link to='/login'>{sideNav}</Link></div>
         </div>
     )
 }

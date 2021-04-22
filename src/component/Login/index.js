@@ -7,7 +7,7 @@ import Form from '../Form'
 const Login = () => {
     return (
         <div>
-            <HomeNavBar />
+            <HomeNavBar sideNav={'Open an account'}/>
             <Form />
         </div>
     )

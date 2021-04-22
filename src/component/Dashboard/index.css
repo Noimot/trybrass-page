@@ -1,0 +1,14 @@
+.dashboard-styling {
+    background: #f6f7f9;
+}
+
+.dashboard-flex-display {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+@media (width:){
+
+}

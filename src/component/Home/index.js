@@ -1,14 +1,14 @@
 import React from 'react'
 import BrassChart from '../BrassAccountChart'
 import { DisplayAdvert } from '../DisplayAdvert'
-import { HomeNavBar } from '../HomeNavBar'
+import { HomeNavBar, Button } from '../HomeNavBar'
 
 
 
 const Home = () => {
     return (
         <div>
-            <HomeNavBar />
+            <HomeNavBar sideNav={<Button />}/>
             <DisplayAdvert />
             <BrassChart />
         </div>
