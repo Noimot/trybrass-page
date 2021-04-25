@@ -17,15 +17,21 @@
     border-radius: 5px;
 }
 
-.login-form input {
+.login-form input, .user-type select {
     background: #f6f7f9;
     border: 1px solid rgb(236, 232, 232);
+}
+
+.user-type select {
+   padding: 0.5rem;
+   border-radius: 5px;
+   outline: 0;
 }
 
 .login-form button {
     background: #3e7eee;
     border: 1px solid #3e7eee;
-    margin: 4rem 0;
+    margin: 1rem 0;
     outline: none;
     text-align: center;
     color: #fff;
@@ -61,5 +67,15 @@ div.inputValidation {
     font-size: 0.8rem;
     padding: 0;
 } 
+
+@media (max-width: 480px){
+    .login-form > * {
+    display: block;
+    width: 18rem;
+    padding: 1rem;
+    margin-top: 1.3rem;
+    border-radius: 5px;
+}
+}
 
 
