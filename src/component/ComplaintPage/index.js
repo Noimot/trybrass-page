@@ -1,13 +1,19 @@
 import React from 'react'
 import Sidebar from '../DashboardSidebar'
 import { HomeNavBar } from '../HomeNavBar'
+import Complaints from '../ComplaintContent'
+import './index.css'
 
 
 const ComplaintPage = () => {
-    return(
+    return (
         <div>
             <HomeNavBar />
-            <Sidebar />
+            <div className='complaints-display'>
+                <Sidebar />
+                <Complaints />
+            </div>
+
         </div>
     )
 }

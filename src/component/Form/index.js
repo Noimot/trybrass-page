@@ -22,7 +22,7 @@ const Form = () => {
 
 
     useEffect(() => {
-        if(userStore.loginSuccess) {
+        if (userStore.loginSuccess) {
             window.location.href = '/dashboard'
         }
     }, [userStore.loginSuccess])
@@ -37,11 +37,10 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setformErrors(false)
-        if (userInfo.username.trim() === '' || userInfo.password.trim() === ''){
+        if (userInfo.username.trim() === '' || userInfo.password.trim() === '') {
             setformErrors(true)
         }
-        console.log(userInfo.username, userInfo.password)
-        
+
         dispatch(LoginData({
             type: userInfo.type,
             username: userInfo.username,
@@ -54,17 +53,17 @@ const Form = () => {
         <div className='form-container'>
             <h1>Log in to your account</h1>
             <form className="login-form">
-                {formErrors ? (<div className='inputValidation'>enter valid username or password</div>) :  ('')}
+                {formErrors ? (<div className='inputValidation'>enter valid username or password</div>) : ('')}
                 <input type='text' name='username' value={userInfo.username} placeholder='Enter username' onChange={handleChange} />
                 <input className='input-position' type='password' name='password' value={userInfo.password} placeholder='Enter password' onChange={handleChange} />
                 <div className='user-type'>
                     User type: <select name="type" onChange={handleChange}>
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
-                </select>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
                 </div>
                 <button onClick={handleSubmit}>Log me in</button>
-                <div>{userStore.loginError ? userStore.errorMessage : ''}</div>
+                <div>{userStore.loginError && <p style={{ color: 'red' }}>only admin can login</p>}</div>
 
             </form>
             <p>Forgot your password? <Link to='#'>Reset it here</Link></p>

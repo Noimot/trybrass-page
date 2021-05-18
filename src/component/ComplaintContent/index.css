@@ -1,0 +1,17 @@
+.complaint-container {
+    margin: 0 1rem;
+    max-width: 900px;
+    width: 100%;
+}
+
+.complaints {  
+    background: #3e7eee;
+    padding: 3rem 1rem;
+    border-radius: 5px;   
+    margin-top: 2rem;
+
+}
+
+.complaint-container:not(:first-child) {
+    margin-top: -2rem;
+}

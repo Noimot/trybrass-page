@@ -8,7 +8,7 @@ const Sidebar = () => {
             <section className='dashboard-sidebar'>
                 <div><Link to='/dashboard'>Dashboard</Link></div>
                 <div><Link to='/userComplaints'>Complaints</Link></div>
-                <div>User info</div>
+                <div><Link to='/'>Logout</Link></div>
             </section>
 
         </div>

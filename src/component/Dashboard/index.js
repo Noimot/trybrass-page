@@ -9,13 +9,13 @@ const redirect = () => {
 }
 
 
- 
+
 const Dashboard = () => {
     const token = localStorage.getItem('x-access-token')
 
-    useEffect(()=> {
-        if(!token) return redirect()
-    },[])
+    useEffect(() => {
+        if (!token) return redirect()
+    }, [token])
 
     return (
         <div className='dashboard-styling'>
@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <Sidebar />
                 <DashboardContent />
             </div>
-           
+
         </div>
     )
 }

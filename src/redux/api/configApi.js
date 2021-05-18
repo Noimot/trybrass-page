@@ -1,9 +1,9 @@
 import axios from 'axios'
 
 export const userToken = () => {
-    const token = localStorage.getItem('accessToken');
+    const token = localStorage.getItem('x-access-token');
     if (token) {
-        return JSON.parse(localStorage.getItem('accessToken'));
+        return token;
     }
     return null
 }
@@ -16,12 +16,12 @@ instance.interceptors.request.use(
     async (config) => {
         const token = userToken();
 
-    if (token){
-        config.headers['x-access-token'] = token;
-    }
-    return config;
-},
-(error) => Promise.reject(error)
+        if (token) {
+            config.headers['x-access-token'] = token;
+        }
+        return config;
+    },
+    (error) => Promise.reject(error)
 );
 
 export default instance;
